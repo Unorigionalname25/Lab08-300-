@@ -55,7 +55,7 @@ char MyString::operator[](int index) const {
     if (index >= 0 && index < len) {
         return myStr[index];
     } else {
-        std::cout << "Index out of bounds!" << std::endl;
+        std::cout << "Index out of bounds" << std::endl;
         return '\0'; // Return a null character for out-of-bounds indices
     }
 }
@@ -64,27 +64,19 @@ bool MyString::operator<(const MyString& other) const {
         return strcmp(myStr, other.myStr) < 0;
     }
 
-    // Redefine the > operator for lexicographic comparison
 bool MyString::operator>(const MyString& other) const {
         return strcmp(myStr, other.myStr) > 0;
     }
 
-    // Redefine the <= operator for lexicographic comparison
 bool MyString::operator<=(const MyString& other) const {
         return strcmp(myStr, other.myStr) <= 0;
     }
-
-    // Redefine the >= operator for lexicographic comparison
 bool MyString::operator>=(const MyString& other) const {
         return strcmp(myStr, other.myStr) >= 0;
     }
-
-    // Redefine the == operator for lexicographic comparison
 bool MyString::operator==(const MyString& other) const {
         return strcmp(myStr, other.myStr) == 0;
     }
-
-    // Redefine the != operator for lexicographic comparison
 bool MyString::operator!=(const MyString& other) const {
         return strcmp(myStr, other.myStr) != 0;
     }
