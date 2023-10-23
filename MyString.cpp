@@ -29,7 +29,7 @@ MyString MyString::substr(int start, int end) const {
     if (end == -1 || end >= len) end = len - 1;
     
     if (start > end) {
-        std::cout << "Invalid substring indices." << std::endl;
+        std::cout << "Invalid substring index" << std::endl;
         return MyString("");
     }
 
@@ -56,7 +56,7 @@ char MyString::operator[](int index) const {
         return myStr[index];
     } else {
         std::cout << "Index out of bounds" << std::endl;
-        return '\0'; // Return a null character for out-of-bounds indices
+        return '\0'; 
     }
 }
 

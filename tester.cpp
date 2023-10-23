@@ -24,11 +24,10 @@ int main() {
         std::cout << "myStr1[" << i << "]: " << myStr1[i] << std::endl;
     }
 
-    char character = myStr1[15]; // This will print "Index out of bounds!"
+    char character = myStr1[15]; 
         std::cout<<character<<std::endl;
         
 
-    // Test relational operators
     if (myStr1 < myStr2) {
         std::cout << "myStr1 is less than myStr2" << std::endl;
     } else if (myStr1 > myStr2) {
